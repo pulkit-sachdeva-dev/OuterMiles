@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OuterMiles - Connecting Places, Creating Stories.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>OuterMiles</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How it Works</a></li>
+                    <li><a href="#featured-trips" class="nav-link">Featured Trips</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-secondary" onclick="window.location.href='login.html'">Login</button>
+                    <button class="btn-primary" onclick="window.location.href='login.html'">Get Started</button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Plan Your Perfect <span class="highlight">Adventure</span> 
+                    <br>All in One Place
+                </h1>
+                <p class="hero-subtitle">
+                    From research and inspiration to the perfect route, accommodations, 
+                    things to do and transportation - OuterMiles simplifies your entire travel planning process.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-hero-primary" onclick="window.location.href='login.html'">Start Planning</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Happy Travelers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100K+</span>
+                        <span class="stat-label">Trips Planned</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Business Partners</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image"></div>
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Route Planning</span>
+                    </div>
+                    <div class="card card-2">
+                        <i class="fas fa-hotel"></i>
+                        <span>Accommodations</span>
+                    </div>
+                    <div class="card card-3">
+                        <i class="fas fa-camera"></i>
+                        <span>Activities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-elements">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="bg-circle bg-circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything You Need for Perfect Trips</h2>
+                <p>One app to replace them all - streamline every aspect of your journey</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Smart Route Planning</h3>
+                    <p>AI-powered route optimization that saves time and maximizes your experiences based on your preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Accommodation Booking</h3>
+                    <p>Find and book the perfect stays with integrated booking and real-time availability checks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Budget Tracking</h3>
+                    <p>Keep track of expenses, set budgets, and get spending insights throughout your journey.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaborative Planning</h3>
+                    <p>Plan together with friends and family with real-time collaboration and shared itineraries.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Offline Access</h3>
+                    <p>Access your itinerary, maps, and important info even without internet connection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Memory Keeping</h3>
+                    <p>Capture and organize your travel memories with photos, notes, and experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How OuterMiles Works</h2>
+                <p>Get from inspiration to itinerary in three simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discover & Research</h3>
+                        <p>Find inspiration from curated destinations and activities. Research everything you need to know about your chosen locations.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Plan & Organize</h3>
+                        <p>Create your perfect itinerary with our smart planning tools. Add accommodations, activities, and transportation seamlessly.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Travel & Enjoy</h3>
+                        <p>Access everything offline during your trip. Track expenses, capture memories, and make the most of every moment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Trips Section -->
+    <section id="featured-trips" class="featured-trips">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Trips & Destinations</h2>
+                <p>Discover handpicked adventures and popular destinations from our travel experts</p>
+            </div>
+            <div class="trips-grid">
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+                        <div class="trip-badge">Popular</div>
+                        <div class="trip-duration">7 Days</div>
+                    </div>
+                    <div class="trip-content">
+                        <h3 class="trip-title">Magical Japan Experience</h3>
+                        <div class="trip-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Tokyo, Kyoto, Osaka
+                        </div>
+                        <p class="trip-description">Immerse yourself in Japan's rich culture, from bustling Tokyo streets to serene Kyoto temples and delicious Osaka street food.</p>
+                        <div class="trip-highlights">
+                            <span class="highlight-tag">Cultural Sites</span>
+                            <span class="highlight-tag">Food Tours</span>
+                            <span class="highlight-tag">Cherry Blossoms</span>
+                        </div>
+                        <div class="trip-footer">
+                            <div class="trip-price">
+                                $1,299
+                                <span class="price-label">per person</span>
+                            </div>
+                            <button class="btn-trip" onclick="window.location.href='login.html'">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+                        <div class="trip-badge">Adventure</div>
+                        <div class="trip-duration">10 Days</div>
+                    </div>
+                    <div class="trip-content">
+                        <h3 class="trip-title">European Grand Tour</h3>
+                        <div class="trip-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Paris, Rome, Barcelona
+                        </div>
+                        <p class="trip-description">Experience Europe's most iconic cities, from the romantic streets of Paris to the historic wonders of Rome and vibrant Barcelona.</p>
+                        <div class="trip-highlights">
+                            <span class="highlight-tag">Historic Sites</span>
+                            <span class="highlight-tag">Art & Culture</span>
+                            <span class="highlight-tag">Cuisine</span>
+                        </div>
+                        <div class="trip-footer">
+                            <div class="trip-price">
+                                $2,199
+                                <span class="price-label">per person</span>
+                            </div>
+                            <button class="btn-trip" onclick="window.location.href='login.html'">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+                        <div class="trip-badge">Luxury</div>
+                        <div class="trip-duration">5 Days</div>
+                    </div>
+                    <div class="trip-content">
+                        <h3 class="trip-title">Tropical Paradise Escape</h3>
+                        <div class="trip-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Maldives
+                        </div>
+                        <p class="trip-description">Relax in overwater bungalows, dive in crystal-clear waters, and enjoy world-class spa treatments in this tropical paradise.</p>
+                        <div class="trip-highlights">
+                            <span class="highlight-tag">Luxury Resorts</span>
+                            <span class="highlight-tag">Water Sports</span>
+                            <span class="highlight-tag">Spa & Wellness</span>
+                        </div>
+                        <div class="trip-footer">
+                            <div class="trip-price">
+                                $3,999
+                                <span class="price-label">per person</span>
+                            </div>
+                            <button class="btn-trip" onclick="window.location.href='login.html'">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+                        <div class="trip-badge">Nature</div>
+                        <div class="trip-duration">8 Days</div>
+                    </div>
+                    <div class="trip-content">
+                        <h3 class="trip-title">Iceland Adventure</h3>
+                        <div class="trip-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Reykjavik, Golden Circle
+                        </div>
+                        <p class="trip-description">Witness the Northern Lights, explore ice caves, relax in geothermal springs, and discover Iceland's dramatic landscapes.</p>
+                        <div class="trip-highlights">
+                            <span class="highlight-tag">Northern Lights</span>
+                            <span class="highlight-tag">Glaciers</span>
+                            <span class="highlight-tag">Hot Springs</span>
+                        </div>
+                        <div class="trip-footer">
+                            <div class="trip-price">
+                                $1,899
+                                <span class="price-label">per person</span>
+                            </div>
+                            <button class="btn-trip" onclick="window.location.href='login.html'">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://assets.gqindia.com/photos/656da9a0f1ef627c90db5fb8/16:9/w_1920,h_1080,c_limit/7-places-in-India-you-should-experience-as-a-solo-traveller_003.jpg');">
+                        <div class="trip-badge">Cultural</div>
+                        <div class="trip-duration">12 Days</div>
+                    </div>
+                    <div class="trip-content">
+                        <h3 class="trip-title">India Golden Triangle</h3>
+                        <div class="trip-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Delhi, Agra, Jaipur
+                        </div>
+                        <p class="trip-description">Explore India's rich heritage, visit the iconic Taj Mahal, experience colorful markets, and discover magnificent palaces.</p>
+                        <div class="trip-highlights">
+                            <span class="highlight-tag">Taj Mahal</span>
+                            <span class="highlight-tag">Royal Palaces</span>
+                            <span class="highlight-tag">Local Markets</span>
+                        </div>
+                        <div class="trip-footer">
+                            <div class="trip-price">
+                                $899
+                                <span class="price-label">per person</span>
+                            </div>
+                            <button class="btn-trip" onclick="window.location.href='login.html'">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trip-card">
+                    <div class="trip-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');">
+                        <div class="trip-badge">Adventure</div>
+                        <div class="trip-duration">14 Days</div>
+                    </div>
+                    <div class="trip-content">
+                        <h3 class="trip-title">New Zealand Explorer</h3>
+                        <div class="trip-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            North & South Island
+                        </div>
+                        <p class="trip-description">Adventure through Middle-earth landscapes, experience Maori culture, try extreme sports, and explore pristine wilderness.</p>
+                        <div class="trip-highlights">
+                            <span class="highlight-tag">Adventure Sports</span>
+                            <span class="highlight-tag">Scenic Drives</span>
+                            <span class="highlight-tag">Wildlife</span>
+                        </div>
+                        <div class="trip-footer">
+                            <div class="trip-price">
+                                $2,599
+                                <span class="price-label">per person</span>
+                            </div>
+                            <button class="btn-trip" onclick="window.location.href='login.html'">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Travel Inspiration Gallery</h2>
+                <p>Get inspired by stunning destinations from around the world</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1539650116574-75c0c6d73400?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>OuterMiles</h3>
+                    </div>
+                    <p>The all-in-one adventure planner that makes travel planning effortless and enjoyable.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#featured-trips">Featured Trips</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 OuterMiles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

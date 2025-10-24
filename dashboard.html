@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./dashboard.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="./icon.png">
+        
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="om-navbar">
+        <div class="om-heading">OuterMiles</div>
+        <div class="om-middle-buttons">
+            <button class="om-middle-button om-middle-button-active" id="you"><i class="fas fa-user profile-icon"></i> You</button>
+            <button class="om-middle-button" id="discover"><i class="fa fa-compass" style="font-size: 20px;"> </i> Discover</button>
+        </div>
+        <div class="om-right-actions">
+            <button class="om-join" onclick="document.getElementById('join-popup').style.display='block'">
+                <i class="fa-solid fa-user-group"></i>
+                Join A trip 
+            </button>
+            
+            <button class="om-add" onclick="document.getElementById('trip1').style.display='block'">
+                <svg viewBox="0 0 1024 1024" width="12" height="12" fill="white">
+                    <path d="M870.949 431.88h-279.089v-278.821c0-44.134-35.613-79.917-79.754-79.917s-79.734 35.783-79.734 79.936v278.994h-279.224c-44.14 0-80.024 35.783-80.005 79.936-0.019 22.058 8.893 42.279 23.336 56.719 14.462 14.479 34.415 23.623 56.456 23.623h279.437v278.604c0 22.082 8.758 42.072 23.22 56.488 14.463 14.46 34.357 23.413 56.437 23.413 44.121 0 79.83-35.781 79.83-79.901v-278.623h279.089c44.142 0 79.931-36.092 79.909-80.227-0.022-44.115-35.803-80.226-79.909-80.226z"></path>
+                </svg>
+                Add
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="om-container" id="om-container">
+        <!-- Sidebar -->
+        <aside class="om-aside-profile">
+            <div class="om-profile-pic">
+                <img class="om-profile" id="profile-photo" src="https://via.placeholder.com/100" alt="Profile">
+                 <!-- <i class="fas fa-user profile-icon"></i> -->
+            </div>
+            <h1 class="om-name" id="profile-name">Guest User</h1>
+            <h3 class="om-username" id="profile-username">@guest_usr</h3>
+            <nav class="om-sidebar-nav">
+                <div class="om-nav-item om-nav-item-active"><i class="fas fa-home"></i> Dashboard</div>
+                <div class="om-nav-item" onclick="document.getElementById('friend-list').style.display='block'"><i class="fas fa-users"></i> Friends</div>
+                <div class="om-nav-item"><i class="fas fa-coins"></i> Budget</div>
+                <!-- <div class="om-nav-item"><i class="fas fa-gear"></i> Settings</div> -->
+            </nav>
+            <!-- Friends Section -->
+
+
+            <br><br><br>
+            <button class="btn btn-outline-danger ms-3" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout </button>
+             
+        </aside>
+
+        <!-- Content Area -->
+        <!-- <div class="gallery-grid">
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+            
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
+        </div> -->
+        
+        <main class="om-content">
+        <div class="om-card" id="trips-container">
+            <div class="om-card1" id="no-trip">
+                <img src="https://www.stippl.io/assets/profile-trip-placeholder-b700979b.svg" width="200px" alt="placeholder">
+                <h2>Create your first trip</h2>
+                <p>Planning is where the adventure starts. Create your first trip and start yours! 🚀</p>
+                <button class="om-add om-first-trip-button" onclick="document.getElementById('trip1').style.display='block'">Create first trip</button>
+                <hr width="90%" color="#c3cfe4" size="1px">
+            </div>
+        </div>
+        </main>
+
+        <!-- Trip details popup -->
+        <div id="trip-details-popup" class="om-create-trip-popup">
+        <div class="om-create-trip-popup-content">
+            <button type="button" class="btn-close" onclick="document.getElementById('trip-details-popup').style.display='none'"></button>
+            <div id="trip-details-content"></div>
+        </div>
+        </div>
+
+    </div>
+    <div class="container2" id="container2" style="display: none;">
+        <div id="map" ></div>
+        
+    </div>
+    <div id="trip1" class="om-create-trip-popup-new">
+        <!-- <div class="om-create-trip-popup-content"> -->
+            <!-- <button type="button" class="btn-close" aria-label="Close" onclick="document.getElementById('trip1').style.display='none'"></button> -->
+            <div class="form-container">
+            <!-- Left Section -->
+            <div class="form-section">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5>Trip name</h5>
+                <button type="button" class="btn-close" onclick="document.getElementById('trip1').style.display='none'"></button>
+                </div>
+
+                <div class="mb-3">
+                <input id="trip-name" type="text" class="form-control " placeholder="Give your trip a name..">
+                </div>
+
+                <h6>Which countries are you going?</h6>
+                <div class="mb-3">
+                <select class="form-select" id="trip-country">
+                    <option selected>Select countries..</option>
+                    <option>India</option>
+                    <option>Uae</option>
+                    <option>France</option>
+                    <option>Japan</option>
+                </select>
+                </div>
+
+                <div class="row mb-2">
+                <div class="col">
+                    <label class="form-label">Start date</label>
+                    <input type="date" class="form-control " id="start-date">
+                </div>
+                <div class="col">
+                    <label class="form-label">End date</label>
+                    <input type="date" class="form-control " id="end-date">
+                </div>
+                </div>
+                <small class="text-muted" style="margin-bottom:200px;">Use this date range to set the amount of days of the trip. The exact dates don't matter and won't be visible to your audience.</small>
+
+                <div class="d-flex justify-content-between">
+                <!-- <button class="btn" id="invite-onpopup"><i class="bi bi-person-plus"></i> Invite friends</button> -->
+                <button class="om-add" id="start-planning" >Start planning</button>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            
+            </div>
+
+        <!-- </div> -->
+    </div>  
+    <div id="join-popup" class="om-create-trip-popup-new">
+        <div class="form-container-join">
+            <!-- Left Section -->
+            <div class="form-section-join">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5>Trip Code</h5>
+                <button type="button" class="btn-close" onclick="document.getElementById('join-popup').style.display='none'"></button>
+                </div>
+
+                <div class="mb-3">
+                <input id="trip-code" type="text" class="form-control " placeholder="Enter trip code to join..">
+                </div>                
+                <!-- <button class="btn" id="invite-onpopup"><i class="bi bi-person-plus"></i> Invite friends</button> -->
+                <button class="om-add" id="join-trip-btn">Join</button>
+                </div>
+            </div>
+            
+            </div>
+
+    </div>
+    <div id="error-msg" class="om-create-trip-popup-new">
+        <div class="form-container-join">
+            <!-- Left Section -->
+            <div class="form-section-join">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <button type="button" class="btn-close" onclick="document.getElementById('error-msg').style.display='none'"></button>
+                </div>
+                <h5 id="err-msg"></h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="friend-list" class="om-create-trip-popup-new">
+        <div class="form-container-join">
+            <!-- Left Section -->
+            <div class="form-section-join">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <button type="button" class="btn-close" onclick="document.getElementById('friend-list').style.display='none'"></button>
+                </div>
+                <div class="mt-4">
+                    <h5>Friends</h5>
+                    <div id="friends-list">
+                    <p>No friends yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dashboard.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXmgRnXftJY0kGBhzZ3nenpNZBtr_xKVU&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 20.5937, lng: 78.9629 }, // India
+        zoom: 3,
+        mapTypeId: "roadmap",
+        tilt: 45, // Enables 3D tilt
+      });
+    }
+  </script>
+
+</body>
+</html>

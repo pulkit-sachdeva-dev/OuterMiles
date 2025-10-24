@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>OuterMiles — Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f4f8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .dashboard-container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+        .logo {
+            width: 32px;
+            height: 32px;
+            background: #00d4aa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .brand-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .welcome-message {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 24px;
+        }
+        .dashboard-content {
+            font-size: 16px;
+            color: #374151;
+        }
+        .logout-btn {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #00d4aa;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .logout-btn:hover {
+            background: #00b894;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <div class="logo">O</div>
+            <div class="brand-name">OuterMiles</div>
+        </div>
+        <div class="welcome-message">Welcome, <span id="user-name">User</span>!</div>
+        <div class="dashboard-content">
+            <p>This is your OuterMiles dashboard. Here you can manage your trips, view itineraries, and plan new adventures.</p>
+            <p>Explore your upcoming trips, check your bookings, or start planning your next journey!</p>
+        </div>
+        <button class="logout-btn" onclick="window.location.href='login.html'">Logout</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userName = sessionStorage.getItem('userName') || 'User';
+            document.getElementById('user-name').textContent = userName;
+            // Clear sessionStorage after displaying the name
+            sessionStorage.removeItem('userName');
+        });
+    </script>
+</body>
+</html>
